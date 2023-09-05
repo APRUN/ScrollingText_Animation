@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Text</title>
+<style>
+body{
+    margin: 0;
+    background-color: #2e3537;
+
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.scroll{
+    white-space: nowrap;
+    margin: 0px 2px;
+}
+.scroll p{
+    font-size: 5rem;
+    color: white;
+    font-weight:bold;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+.lefttoright{
+    animation: RighttoLeft 10s infinite linear;
+}
+@keyframes RighttoLeft{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="scroll">
+            <div class="lefttoright">    
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatem molestias perspiciatis!</p>
+        </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+</html>
